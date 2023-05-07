@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 0 10px;
+}
+.container hr {
+  margin-bottom: 50px;
+}
+
+.feed {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 30px;
+  font-family: Arial sans-serif;
+}
+
+.feed__nav {
+  padding: 50px 0;
+  min-width: 300px;
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.feed__nav .title {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.progress-bar__content {
+  position: relative;
+  width: 200px;
+  height: 10px;
+  background-color: #747474;
+  border: 2px dashed black;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.progress-bar__content .progress-bar__line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: #ffcc00;
+}
+
+.feed__content {
+  width: 100%;
+  border-left: 3px solid black;
+}
+
+.feed__nav-list {
+  list-style: none;
+}
+
+.feed__nav-item:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.feed__nav-link {
+  position: relative;
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.feed__nav-link:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  border: 6px solid transparent;
+  background-color: transparent;
+  transition: all 0.2s;
+}
+.feed__nav-link.active {
+  padding-left: 14px;
+  color: #0033ff;
+}
+.feed__nav-link.active:before {
+  border-left-color: #0033ff;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+.section.section-1 {
+  background-color: #ff7070;
+}
+.section.section-2 {
+  background-color: #faff70;
+}
+.section.section-3 {
+  background-color: #70ff7c;
+}
+.section.section-4 {
+  background-color: #03ffe1;
+}
+.section.section-5 {
+  background-color: #e800ff;
+}
+
+/*# sourceMappingURL=style.css.map */
