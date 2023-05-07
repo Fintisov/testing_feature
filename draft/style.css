@@ -1,0 +1,10 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+.container hr {
+  margin-bottom: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
