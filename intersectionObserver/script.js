@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
     function checkSection() {
         const blocks = document.querySelectorAll(".feed__content .section");
         const links = document.querySelectorAll(".feed__nav-link");
@@ -50,5 +49,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     window.addEventListener("scroll", animateProgressBar);
-
 })
